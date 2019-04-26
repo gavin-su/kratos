@@ -23,7 +23,9 @@ kratos init
 
 ```shell
 cd kratos-demo
-go build mail.go
+go mod init
+cd cmd
+go build
 ./cmd -conf ../configs
 ```
 
