@@ -22,8 +22,8 @@ kratos init
 `kratos init`会快速生成基于kratos库的脚手架代码，如生成[kratos-demo](https://github.com/bilibili/kratos-demo)
 
 ```shell
-cd kratos-demo/cmd
-go build
+cd kratos-demo
+go build cmd
 ./cmd -conf ../configs
 ```
 
