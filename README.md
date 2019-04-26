@@ -31,6 +31,25 @@ go build
 
 打开浏览器访问：[http://localhost:8000/kratos-demo/start](http://localhost:8000/kratos-demo/start)，你会看到输出了`Golang 大法好 ！！！`
 
+## grpc
+```shell
+//kratos init （选择grpc)
+export GO111MODULE=off
+go get -u github.com/bilibili/kratos
+cd ~/go/src/github.com/bilibili/kratos/tool/kprotoc
+/bin/bash -x ./install_kprotoc.sh
+go get -u github.com/gogo/protobuf
+export GO111MODULE=on
+cd kratos-demo-rpc
+go mod init
+cd api
+go generate
+cd ../cmd
+go build
+./cmd -conf ../configs
+```
+
+
 [快速开始](doc/wiki-cn/quickstart.md)
 
 # Document
